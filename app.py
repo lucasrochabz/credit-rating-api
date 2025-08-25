@@ -2,11 +2,8 @@ from flask import Flask
 from routes.route import route_bp
 from flask_cors import CORS
 import os
-# import pandas as pd
-# import joblib
 
-
-app = Flask(__name__, static_url_path='/static')
+app = Flask(__name__)
 CORS(app, origins=["http://localhost:5173"])
 
 # Registro do blueprint
