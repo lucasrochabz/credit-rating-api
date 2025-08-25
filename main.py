@@ -1,17 +1,13 @@
 import numpy as np
 import pandas as pd
 import os
-from flask import Flask, request, render_template, make_response
+from flask import Flask, request
 from flask_cors import CORS
 import joblib
 
 app = Flask(__name__, static_url_path='/static')
 CORS(app, origins=["http://localhost:5173"])
 model = joblib.load('model/pipeline_logistica.pkl')
-
-@app.route('/')
-def display_gui():
-  return render_template('template.html')
 
 @app.route('/verificar', methods=['POST'])
 def verificar():
