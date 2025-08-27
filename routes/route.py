@@ -36,7 +36,7 @@ def verificar():
       'parceiros_fiadores': data['parceiros_fiadores']
     }])
 
-    classe = str(model.predict(teste)[0])
+    classe = int(model.predict(teste)[0])
 
     return jsonify({'status': 'ok', "data": classe}), 200
   except ValidationError as err:
