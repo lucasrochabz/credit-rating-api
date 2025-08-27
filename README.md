@@ -1,6 +1,14 @@
 # credit-rating-api
 
-### Iniciar a aplicação
+API desenvolvida em Flask para classificação de crédito utilizando modelo de Machine Learning.
+
+## Pré-requisitos
+
+- Python 3.9 ou superior
+- pip (gerenciador de pacotes do Python)
+- virtualenv (opcional, mas recomendado)
+
+## Iniciar a aplicação
 
 1. Crie o ambiente virtual:
 
@@ -15,15 +23,13 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
 
-(No Windows use )
-
 3. Instale as dependências do projeto
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Rode o servidor
+4. Inicie o servidor
 
 ```bash
 python3 app.py
